@@ -3,7 +3,7 @@
 Ejercicio de DDL en el que hay que modelar la siguiente base de datos:
 
 
-<img src="MR.png" style="width:600px; margin:auto;">
+<img src="./ejercicio1foto.png" style="width:600px; margin:auto;">
 
 ## 1. Crear las tablas 
 
