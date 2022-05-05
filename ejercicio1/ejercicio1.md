@@ -18,8 +18,8 @@ Según el esquema anterior, sería necesario crear las siguientes tablas:
 La tabla jugadores tiene los siguientes campos
 Crear la tabla jugadores:
 
-SQL
-`CREATE TABLE Jugadores (
+```SQL
+CREATE TABLE Jugadores (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     id_equipo INT, 
     nombre VARCHAR (20) NOT NULL, 
@@ -29,7 +29,7 @@ SQL
     sueldo INT NOT NULL,
     nacionalidad VARCHAR (20) NOT NULL
 );
-´´
+```
 ### Tabla Equipos 
 Crear la tabla equipos:
 
@@ -71,6 +71,8 @@ CREATE TABLE Partidos (
 
 Una vez creadas las tablas, es necesario relacionarlas a través de las claves foráneas. Para ello, es necesario...
 
+```SQL
+
 ALTER TABLE Jugadores ADD FOREIGN KEY(id_equipo) REFERENCES Equipos (id);
 
 ALTER TABLE Equipos ADD FOREIGN KEY(id_entreador) REFERENCES Entrenador(id);
@@ -78,3 +80,4 @@ ALTER TABLE Equipos ADD FOREIGN KEY(id_entreador) REFERENCES Entrenador(id);
 ALTER TABLE Partidos ADD FOREIGN KEY(id_equipo_local) REFERENCES Equipos(id);
 ALTER TABLE Partidos ADD FOREIGN KEY(id_equipo_visitante) REFERENCES Equipos(id);
 
+```
