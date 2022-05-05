@@ -1,6 +1,6 @@
 CREATE TABLE Jugadores (
     id INT NOT NULL PRIMARY KEY, 
-    id_equipo INT NOT NULL , 
+    id_equipo INT , 
     nombre VARCHAR (20) NOT NULL, 
     apellidos VARCHAR (20) NOT NULL, 
     fecha_Nacimiento DATE NOT NULL,
