@@ -1,6 +1,6 @@
 CREATE TABLE Equipos (
     id INT NOT NULL PRIMARY KEY, 
-    id_entreador INT NOT NULL, 
+    id_entreador INT, 
     nombre VARCHAR (20) NOT NULL, 
     division CHAR NOT NULL, 
     ciudad VARCHAR (20) NOT NULL, 
